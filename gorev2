@@ -1,0 +1,120 @@
+#include <iostream>
+#include <string>
+
+int main() {
+  std::cout << "sayi gir\n";
+int sayi;
+  std::cin>>sayi;
+
+  int bas1 = (sayi%10);
+  int bas2 = ((sayi/10)%10);
+  int bas3 = (sayi/100);
+
+  std::string y1;
+  std::string y2;
+  std::string y3;
+
+  switch(bas1){
+
+    case 1:{
+      y1 = "bir";
+      break; }
+    case 2:{
+      y1 = "iki";
+      break; }
+    case 3:{
+      y1 = "üç";
+      break; }
+    case 4:{
+      y1 = "dört";
+      break; }
+    case 5:{
+      y1 = "beş";
+      break; }
+    case 6:{
+      y1 = "altı";
+      break; }
+    case 7:{
+      y1 = "yedi";
+      break; }
+    case 8:{
+      y1 = "sekiz";
+      break; }
+    case 9:{
+      y1 = "dokuz";
+      break; }
+  }
+    
+  switch(bas2){
+
+    case 1:{
+      y2 = "on";
+      break;  }
+    case 2:{
+      y2 = "yirmi";
+      break;  }
+    case 3:{
+      y2 = "otuz";
+      break;  }
+    case 4:{
+      y2 = "kırk";
+      break;  }
+    case 5:{
+      y2 = "elli";
+      break;  }
+    case 6:{
+      y2 = "altmış";
+      break;  }
+    case 7:{
+      y2 = "yetmiş";
+      break;  }
+    case 8:{
+      y2 = "seksen";
+      break;  }
+    case 9:{
+      y2 = "doksan";
+      break;  }
+    }
+
+  switch(bas3){
+
+    case 1:{
+      y3 = "bir";
+      break; }
+    case 2:{
+      y3 = "iki";
+      break; }
+    case 3:{
+      y3 = "üç";
+      break; }
+    case 4:{
+      y3 = "dört";
+      break; }
+    case 5:{
+      y3 = "beş";
+      break; }
+    case 6:{
+      y3 = "altı";
+      break; }
+    case 7:{
+      y3 = "yedi";
+      break; }
+    case 8:{
+      y3 = "sekiz";
+      break; }
+    case 9:{
+      y3 = "dokuz";
+      break; }
+  }
+
+  if (sayi<10){
+    std::cout << y1;}
+  else if (sayi>9, sayi<100){
+      std::cout << (y2+y1);}
+  else if (sayi>99, sayi<200){
+    std::cout << ("yüz"+y2+y1);
+  }
+  else if (sayi>199, sayi<1000){
+    std::cout << (y3+"yüz"+y2+y1);
+  }
+    }
