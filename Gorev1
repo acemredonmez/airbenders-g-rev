@@ -1,0 +1,11 @@
+#include <iostream>
+#define G 9.80665;
+
+int main() {
+  float t, x;
+  std::cout<<"ne kadar süre havada kalacak?";
+  std::cin>>t;
+
+  x= 0.5*t*t*G;
+  std::cout<< x;
+}
