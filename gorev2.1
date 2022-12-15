@@ -1,0 +1,31 @@
+#include <iostream>
+#include <vector>
+
+double toplam=0;
+double ort=0;
+std::vector<double> vec1;
+
+double ortal(){
+
+for(int i=0;i<vec1.size();i++){
+  toplam += vec1.operator[](i);
+}
+  ort = toplam/ vec1.size();
+std::cout << ort;
+  
+  }
+  
+int main() {
+
+
+std::cout << "kaç sayı gircen?";
+int n, sayi;
+std::cin >> n;
+
+for(int a=0; a<n; a++){
+  std::cout << "sayi gir:";
+  std::cin >> sayi;
+  vec1.push_back(sayi);
+}
+ortal();
+}
